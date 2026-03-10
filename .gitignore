@@ -1,0 +1,33 @@
+cd C:\Users\Laptop\career-path
+type nul > .gitignore
+```
+
+Open `.gitignore` in Notepad and paste:
+```
+# Cache
+cache/
+__pycache__/
+*.pyc
+*.pyo
+
+# Environment
+.env
+.venv
+env/
+venv/
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Large ESCO dataset files
+Dataset/occupations_en.csv
+Dataset/skills_en.csv
+Dataset/occupationSkillRelations_en.csv

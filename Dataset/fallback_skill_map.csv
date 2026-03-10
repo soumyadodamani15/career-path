@@ -1,0 +1,260 @@
+user_skill,esco_skill,domain
+docker,use containerisation tools,IT & DevOps & Cloud
+kubernetes,orchestrate software containers,IT & DevOps & Cloud
+podman,use containerisation tools,IT & DevOps & Cloud
+helm,orchestrate software containers,IT & DevOps & Cloud
+ci/cd pipelines,software deployment,IT & DevOps & Cloud
+ci/cd,software deployment,IT & DevOps & Cloud
+jenkins,automate software builds,IT & DevOps & Cloud
+github actions,automate software builds,IT & DevOps & Cloud
+gitlab ci,automate software builds,IT & DevOps & Cloud
+ansible,automate IT operations,IT & DevOps & Cloud
+terraform,manage cloud infrastructure,IT & DevOps & Cloud
+puppet,automate IT operations,IT & DevOps & Cloud
+chef,automate IT operations,IT & DevOps & Cloud
+aws,use cloud computing services,IT & DevOps & Cloud
+azure,use cloud computing services,IT & DevOps & Cloud
+google cloud,use cloud computing services,IT & DevOps & Cloud
+gcp,use cloud computing services,IT & DevOps & Cloud
+cloud computing,use cloud computing services,IT & DevOps & Cloud
+serverless,develop cloud applications,IT & DevOps & Cloud
+lambda,develop cloud applications,IT & DevOps & Cloud
+azure functions,develop cloud applications,IT & DevOps & Cloud
+git,use version control systems,IT & DevOps & Cloud
+github,use version control systems,IT & DevOps & Cloud
+gitlab,use version control systems,IT & DevOps & Cloud
+bitbucket,use version control systems,IT & DevOps & Cloud
+linux,use operating system software,IT & DevOps & Cloud
+bash,write scripts,IT & DevOps & Cloud
+shell scripting,write scripts,IT & DevOps & Cloud
+powershell,write scripts,IT & DevOps & Cloud
+grafana,monitor ICT systems,IT & DevOps & Cloud
+prometheus,monitor ICT systems,IT & DevOps & Cloud
+splunk,monitor ICT systems,IT & DevOps & Cloud
+datadog,monitor ICT systems,IT & DevOps & Cloud
+elk stack,monitor ICT systems,IT & DevOps & Cloud
+tcp/ip,apply network protocols,IT & DevOps & Cloud
+dns,manage network systems,IT & DevOps & Cloud
+vpn,manage network security,IT & DevOps & Cloud
+load balancing,manage network systems,IT & DevOps & Cloud
+nginx,manage web servers,IT & DevOps & Cloud
+apache,manage web servers,IT & DevOps & Cloud
+penetration testing,test ICT security,IT & DevOps & Cloud
+ethical hacking,test ICT security,IT & DevOps & Cloud
+firewall,manage network security,IT & DevOps & Cloud
+siem,manage ICT security,IT & DevOps & Cloud
+oauth,implement authentication systems,IT & DevOps & Cloud
+ssl/tls,implement ICT security measures,IT & DevOps & Cloud
+zero trust,manage network security,IT & DevOps & Cloud
+react,develop web applications,IT & DevOps & Cloud
+angular,develop web applications,IT & DevOps & Cloud
+vue.js,develop web applications,IT & DevOps & Cloud
+node.js,develop server-side applications,IT & DevOps & Cloud
+next.js,develop web applications,IT & DevOps & Cloud
+typescript,use programming languages,IT & DevOps & Cloud
+graphql,develop web services,IT & DevOps & Cloud
+rest apis,develop web services,IT & DevOps & Cloud
+webpack,develop web applications,IT & DevOps & Cloud
+react native,develop mobile applications,IT & DevOps & Cloud
+flutter,develop mobile applications,IT & DevOps & Cloud
+swift,develop mobile applications,IT & DevOps & Cloud
+kotlin,develop mobile applications,IT & DevOps & Cloud
+android development,develop mobile applications,IT & DevOps & Cloud
+ios development,develop mobile applications,IT & DevOps & Cloud
+tensorflow,utilise machine learning,Data Science & AI & ML
+pytorch,utilise machine learning,Data Science & AI & ML
+keras,utilise machine learning,Data Science & AI & ML
+scikit-learn,utilise machine learning,Data Science & AI & ML
+xgboost,perform predictive modelling,Data Science & AI & ML
+lightgbm,perform predictive modelling,Data Science & AI & ML
+hugging face,perform natural language processing,Data Science & AI & ML
+langchain,develop artificial intelligence applications,Data Science & AI & ML
+openai api,develop artificial intelligence applications,Data Science & AI & ML
+pandas,use data processing techniques,Data Science & AI & ML
+numpy,use data processing techniques,Data Science & AI & ML
+spark,process big data,Data Science & AI & ML
+hadoop,process big data,Data Science & AI & ML
+kafka,process data streams,Data Science & AI & ML
+airflow,manage data pipelines,Data Science & AI & ML
+dbt,manage data pipelines,Data Science & AI & ML
+tableau,use data visualisation software,Data Science & AI & ML
+power bi,use data visualisation software,Data Science & AI & ML
+looker,use data visualisation software,Data Science & AI & ML
+qlik,use data visualisation software,Data Science & AI & ML
+matplotlib,create data visualisations,Data Science & AI & ML
+seaborn,create data visualisations,Data Science & AI & ML
+plotly,create data visualisations,Data Science & AI & ML
+large language models,develop artificial intelligence applications,Data Science & AI & ML
+llms,develop artificial intelligence applications,Data Science & AI & ML
+generative ai,develop artificial intelligence applications,Data Science & AI & ML
+prompt engineering,develop artificial intelligence applications,Data Science & AI & ML
+retrieval augmented generation,develop artificial intelligence applications,Data Science & AI & ML
+rag,develop artificial intelligence applications,Data Science & AI & ML
+computer vision,analyse image data,Data Science & AI & ML
+nlp,perform natural language processing,Data Science & AI & ML
+reinforcement learning,utilise machine learning,Data Science & AI & ML
+mlops,deploy machine learning models,Data Science & AI & ML
+feature engineering,perform predictive modelling,Data Science & AI & ML
+model deployment,deploy machine learning models,Data Science & AI & ML
+mongodb,use NoSQL databases,Data Science & AI & ML
+redis,use NoSQL databases,Data Science & AI & ML
+elasticsearch,use NoSQL databases,Data Science & AI & ML
+cassandra,use NoSQL databases,Data Science & AI & ML
+postgresql,use databases,Data Science & AI & ML
+mysql,use databases,Data Science & AI & ML
+sql server,use databases,Data Science & AI & ML
+snowflake,use cloud databases,Data Science & AI & ML
+bigquery,use cloud databases,Data Science & AI & ML
+databricks,process big data,Data Science & AI & ML
+figma,design user interface,Creative & Design & Media
+sketch,design user interface,Creative & Design & Media
+adobe xd,design user interface,Creative & Design & Media
+invision,create prototype of user experience solutions,Creative & Design & Media
+zeplin,design user interface,Creative & Design & Media
+wireframing,create prototype of user experience solutions,Creative & Design & Media
+prototyping,create prototype of user experience solutions,Creative & Design & Media
+ux research,execute ICT user research activities,Creative & Design & Media
+ux design,use methodologies for user-centered design,Creative & Design & Media
+user experience,combine business technology with user experience,Creative & Design & Media
+usability testing,assess users' interaction with ICT applications,Creative & Design & Media
+interaction design,design interaction model,Creative & Design & Media
+information architecture,design information system,Creative & Design & Media
+design thinking,apply design thinking,Creative & Design & Media
+accessibility,test system accessibility for users with special needs,Creative & Design & Media
+adobe photoshop,use image editing software,Creative & Design & Media
+adobe illustrator,use image editing software,Creative & Design & Media
+adobe indesign,use desktop publishing software,Creative & Design & Media
+adobe premiere,use video editing software,Creative & Design & Media
+adobe after effects,use animation software,Creative & Design & Media
+adobe lightroom,use image editing software,Creative & Design & Media
+adobe audition,use audio editing software,Creative & Design & Media
+blender,use 3D modelling software,Creative & Design & Media
+cinema 4d,use 3D modelling software,Creative & Design & Media
+maya,use 3D modelling software,Creative & Design & Media
+3ds max,use 3D modelling software,Creative & Design & Media
+zbrush,use 3D modelling software,Creative & Design & Media
+unity,develop digital games,Creative & Design & Media
+unreal engine,develop digital games,Creative & Design & Media
+final cut pro,use video editing software,Creative & Design & Media
+davinci resolve,use video editing software,Creative & Design & Media
+color grading,use video editing software,Creative & Design & Media
+motion graphics,use animation software,Creative & Design & Media
+podcast production,produce audio content,Creative & Design & Media
+sound design,create sound designs,Creative & Design & Media
+copywriting,write promotional content,Creative & Design & Media
+seo writing,apply search engine optimisation techniques,Creative & Design & Media
+content strategy,develop content strategy,Creative & Design & Media
+content marketing,develop content strategy,Creative & Design & Media
+technical writing,write technical documentation,Creative & Design & Media
+ux writing,write user instructions,Creative & Design & Media
+blog writing,write articles,Creative & Design & Media
+ghostwriting,write articles,Creative & Design & Media
+headhunting,identify talent,HR & People & Soft Skills
+talent acquisition,talent management strategies,HR & People & Soft Skills
+employer branding,supervise brand management,HR & People & Soft Skills
+onboarding,integrate new employees,HR & People & Soft Skills
+applicant tracking systems,manage recruitment process,HR & People & Soft Skills
+ats,manage recruitment process,HR & People & Soft Skills
+linkedin recruiting,recruit employees,HR & People & Soft Skills
+instructional design,design training programmes,HR & People & Soft Skills
+e-learning development,develop e-learning courses,HR & People & Soft Skills
+lms,manage learning management systems,HR & People & Soft Skills
+learning management systems,manage learning management systems,HR & People & Soft Skills
+training delivery,deliver training,HR & People & Soft Skills
+coaching,coach employees,HR & People & Soft Skills
+mentoring,mentor employees,HR & People & Soft Skills
+payroll management,manage payroll,HR & People & Soft Skills
+hris,use human resources information systems,HR & People & Soft Skills
+workday,use human resources information systems,HR & People & Soft Skills
+sap hr,use human resources information systems,HR & People & Soft Skills
+compensation planning,manage compensation and benefits,HR & People & Soft Skills
+performance management,manage employee performance,HR & People & Soft Skills
+succession planning,plan workforce succession,HR & People & Soft Skills
+workforce planning,plan human resources,HR & People & Soft Skills
+employee engagement,manage employee relations,HR & People & Soft Skills
+diversity and inclusion,promote equal opportunities,HR & People & Soft Skills
+organizational development,develop organisational strategies,HR & People & Soft Skills
+conflict resolution,resolve conflicts,HR & People & Soft Skills
+stakeholder management,manage stakeholder relationships,HR & People & Soft Skills
+change management,manage organisational change,HR & People & Soft Skills
+active listening,apply active listening techniques,HR & People & Soft Skills
+emotional intelligence,demonstrate emotional intelligence,HR & People & Soft Skills
+public speaking,deliver presentations,HR & People & Soft Skills
+facilitation,facilitate group discussions,HR & People & Soft Skills
+excel,use spreadsheet software,Finance & Accounting
+bloomberg terminal,use financial information systems,Finance & Accounting
+sap finance,use enterprise resource planning systems,Finance & Accounting
+quickbooks,use accounting software,Finance & Accounting
+xero,use accounting software,Finance & Accounting
+oracle financials,use enterprise resource planning systems,Finance & Accounting
+erp systems,use enterprise resource planning systems,Finance & Accounting
+financial modeling,develop financial models,Finance & Accounting
+ifrs,apply international financial reporting standards,Finance & Accounting
+gaap,apply accounting standards,Finance & Accounting
+algorithmic trading,develop trading algorithms,Finance & Accounting
+quantitative analysis,perform quantitative financial analysis,Finance & Accounting
+risk modeling,develop risk models,Finance & Accounting
+derivatives,trade financial instruments,Finance & Accounting
+portfolio management,manage investment portfolios,Finance & Accounting
+esg investing,apply sustainable investment strategies,Finance & Accounting
+transfer pricing,apply transfer pricing methods,Finance & Accounting
+forensic accounting,conduct financial investigations,Finance & Accounting
+electronic health records,manage healthcare users' data,Healthcare & Medical
+ehr,manage healthcare users' data,Healthcare & Medical
+emr,manage healthcare users' data,Healthcare & Medical
+pacs,use medical imaging systems,Healthcare & Medical
+mri operation,operate medical imaging equipment,Healthcare & Medical
+ct scan operation,operate medical imaging equipment,Healthcare & Medical
+clinical diagnosis,perform clinical assessments,Healthcare & Medical
+patient counseling,counsel patients,Healthcare & Medical
+cognitive behavioral therapy,apply cognitive behavioural therapy,Healthcare & Medical
+cbt,apply cognitive behavioural therapy,Healthcare & Medical
+musculoskeletal assessment,perform musculoskeletal assessments,Healthcare & Medical
+drug dispensing,dispense medications,Healthcare & Medical
+triage,perform patient triage,Healthcare & Medical
+telemedicine,provide remote healthcare services,Healthcare & Medical
+medical coding,code medical diagnoses,Healthcare & Medical
+google analytics,analyse web traffic data,Marketing & Sales
+google ads,manage online advertising campaigns,Marketing & Sales
+facebook ads,manage online advertising campaigns,Marketing & Sales
+hubspot,use customer relationship management systems,Marketing & Sales
+salesforce,use customer relationship management systems,Marketing & Sales
+crm,use customer relationship management systems,Marketing & Sales
+mailchimp,manage email marketing campaigns,Marketing & Sales
+hootsuite,manage social media platforms,Marketing & Sales
+seo,apply search engine optimisation techniques,Marketing & Sales
+sem,manage online advertising campaigns,Marketing & Sales
+pay per click,manage online advertising campaigns,Marketing & Sales
+ppc,manage online advertising campaigns,Marketing & Sales
+conversion rate optimisation,optimise digital marketing performance,Marketing & Sales
+cro,optimise digital marketing performance,Marketing & Sales
+a/b testing,conduct marketing experiments,Marketing & Sales
+growth hacking,develop digital marketing strategies,Marketing & Sales
+affiliate marketing,manage affiliate marketing programmes,Marketing & Sales
+influencer marketing,manage influencer partnerships,Marketing & Sales
+brand management,manage brand identity,Marketing & Sales
+market research,conduct market research,Marketing & Sales
+customer segmentation,analyse customer data,Marketing & Sales
+product marketing,develop product marketing strategies,Marketing & Sales
+b2b sales,perform business to business sales,Marketing & Sales
+b2c sales,perform business to consumer sales,Marketing & Sales
+account management,manage client accounts,Marketing & Sales
+cold calling,perform sales outreach,Marketing & Sales
+sales forecasting,forecast sales performance,Marketing & Sales
+negotiation,apply negotiation techniques,Marketing & Sales
+gdpr,ensure compliance with data protection regulations,Legal & Compliance
+data privacy,ensure compliance with data protection regulations,Legal & Compliance
+contract drafting,draft legal documents,Legal & Compliance
+contract negotiation,negotiate contracts,Legal & Compliance
+legal research,conduct legal research,Legal & Compliance
+due diligence,perform due diligence investigations,Legal & Compliance
+intellectual property,manage intellectual property rights,Legal & Compliance
+corporate law,apply corporate law,Legal & Compliance
+employment law,apply employment legislation,Legal & Compliance
+labor law,apply employment legislation,Legal & Compliance
+compliance management,manage regulatory compliance,Legal & Compliance
+risk assessment,assess risks,Legal & Compliance
+regulatory reporting,prepare regulatory reports,Legal & Compliance
+anti-money laundering,apply anti-money laundering regulations,Legal & Compliance
+aml,apply anti-money laundering regulations,Legal & Compliance
+kyc,perform customer due diligence,Legal & Compliance

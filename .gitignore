@@ -28,6 +28,3 @@ Thumbs.db
 *.log
 
 # Large ESCO dataset files
-Dataset/occupations_en.csv
-Dataset/skills_en.csv
-Dataset/occupationSkillRelations_en.csv

@@ -1,18 +1,15 @@
 import os
 
 # ── Detect environment ────────────────────────────────────
-# On Railway, datasets and cache are stored in /data volume
-# Locally, they are in the project folder
+IS_PRODUCTION = os.getenv("RENDER") is not None
 
-IS_RAILWAY = os.getenv("RAILWAY_ENVIRONMENT") is not None
-
-if IS_RAILWAY:
-    DATA_DIR    = "/data"
+if IS_PRODUCTION:
+    # On Render — datasets on persistent disk
     DATASET_DIR = "/data/dataset"
     CACHE_DIR   = "/data/cache"
 else:
+    # Local — datasets in project folder
     BASE_DIR    = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-    DATA_DIR    = BASE_DIR
     DATASET_DIR = os.path.join(BASE_DIR, "Dataset")
     CACHE_DIR   = os.path.join(BASE_DIR, "cache")
 

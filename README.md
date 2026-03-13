@@ -1,6 +1,13 @@
 <<<<<<< HEAD
 # Career Recommendation Engine
-
+---
+title: Career Path
+emoji: 🚀
+colorFrom: blue
+colorTo: purple
+sdk: docker
+pinned: false
+---
 Semantic career recommendation and skill gap analysis using the ESCO dataset.
 
 ## Project Structure

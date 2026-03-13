@@ -13,6 +13,7 @@ from engine.embeddings import (
     load_or_generate_skill_embeddings,
     load_or_generate_occupation_embeddings
 )
+from engine.dataset_downloader import download_relations_if_missing
 from api.state import app_state
 from api.routes import router
 
@@ -24,52 +25,44 @@ async def lifespan(app: FastAPI):
     print("CAREER ENGINE — STARTUP")
     print("=" * 60)
 
-    # ── Check datasets exist ──────────────────────────────
-    from engine.config import OCCUPATIONS_PATH, SKILLS_PATH, RELATIONS_PATH
-    missing = []
-    for path in [OCCUPATIONS_PATH, SKILLS_PATH, RELATIONS_PATH]:
-        if not os.path.exists(path):
-            missing.append(path)
+    # ── Step 0: Download large CSV if missing ────────────
+    print("\n[0/5] Checking datasets...")
+    download_relations_if_missing()
 
-    if missing:
-        print("❌ Missing dataset files:")
-        for f in missing:
-            print(f"   {f}")
-        print("\nPlease upload datasets to Railway volume at /data/dataset/")
-        raise FileNotFoundError(f"Missing datasets: {missing}")
-
-    # rest of startup continues...
+    # ── Step 1: Load datasets ─────────────────────────────
     print("\n[1/5] Loading datasets...")
     occupations_df, skills_df, relations_df = load_datasets()
     print(f"   Occupations : {len(occupations_df)}")
     print(f"   Skills      : {len(skills_df)}")
     print(f"   Relations   : {len(relations_df)}")
 
-    # Build skill maps
+    # ── Step 2: Build skill maps ──────────────────────────
     print("\n[2/5] Building skill maps...")
     essential_skills_map, all_skills_map = build_skill_maps(relations_df)
     print(f"   Essential skills map : {len(essential_skills_map)} occupations")
 
-    # Build occupation corpus
+    # ── Step 3: Build occupation corpus ───────────────────
     print("\n[3/5] Building occupation corpus...")
     occupation_corpus, occupation_uris, occupation_labels = build_occupation_corpus(
         occupations_df, all_skills_map
     )
     print(f"   Corpus size : {len(occupation_corpus)}")
 
-    # Load model and embeddings
+    # ── Step 4: Load model and embeddings ─────────────────
     print("\n[4/5] Loading model and embeddings...")
-    model            = load_model()
+    model             = load_model()
     esco_skill_labels = skills_df["preferredLabel"].fillna("").tolist()
     skill_embeddings  = load_or_generate_skill_embeddings(model, esco_skill_labels)
-    occupation_embeddings = load_or_generate_occupation_embeddings(model, occupation_corpus)
+    occupation_embeddings = load_or_generate_occupation_embeddings(
+        model, occupation_corpus
+    )
 
-    # Load fallback skill map
+    # ── Step 5: Load fallback skill map ───────────────────
     print("\n[5/5] Loading fallback skill map...")
     fallback_skill_map = load_fallback_skill_map()
     print(f"   Fallback entries : {len(fallback_skill_map)}")
 
-    # Store everything in shared state
+    # ── Store in shared state ─────────────────────────────
     app_state.update({
         "model":                 model,
         "esco_skill_labels":     esco_skill_labels,
@@ -87,7 +80,6 @@ async def lifespan(app: FastAPI):
 
     yield
 
-    # Cleanup on shutdown
     app_state.clear()
     print("Career Engine shut down.")
 

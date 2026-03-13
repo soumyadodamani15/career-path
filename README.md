@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Career Recommendation Engine
 
 Semantic career recommendation and skill gap analysis using the ESCO dataset.
@@ -139,3 +140,16 @@ curl -X POST http://localhost:8000/api/v1/admin/reload-fallback
 3. New Project → Deploy from GitHub
 4. Set start command: `uvicorn main:app --host 0.0.0.0 --port $PORT`
 5. Add environment variable: `PORT=8000`
+=======
+---
+title: Career Path
+emoji: 🌍
+colorFrom: pink
+colorTo: gray
+sdk: docker
+pinned: false
+license: mit
+---
+
+Check out the configuration reference at https://huggingface.co/docs/hub/spaces-config-reference
+>>>>>>> 699d0c1e360a3ccda0c9eb3347736fd7ae18ffd3

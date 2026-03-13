@@ -32,7 +32,7 @@ def health_check():
 
 
 # ── Main Recommendation Endpoint ─────────────────────────
-@router.post("/recommend")
+@router.post("/betaRecommendation")
 def recommend_careers(request: CareerRequest):
     """
     Returns top 5 career recommendations and skill gap analysis

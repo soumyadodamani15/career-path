@@ -3,15 +3,10 @@ import os
 # ── Detect environment ────────────────────────────────────
 IS_PRODUCTION = os.getenv("RENDER") is not None
 
-if IS_PRODUCTION:
-    # On Render — datasets on persistent disk
-    DATASET_DIR = "/data/dataset"
-    CACHE_DIR   = "/data/cache"
-else:
-    # Local — datasets in project folder
-    BASE_DIR    = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-    DATASET_DIR = os.path.join(BASE_DIR, "Dataset")
-    CACHE_DIR   = os.path.join(BASE_DIR, "cache")
+# Base directory is always the project root
+BASE_DIR    = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+DATASET_DIR = os.path.join(BASE_DIR, "Dataset")
+CACHE_DIR   = os.path.join(BASE_DIR, "cache")
 
 # ── Dataset paths ─────────────────────────────────────────
 OCCUPATIONS_PATH = os.path.join(DATASET_DIR, "occupations_en.csv")

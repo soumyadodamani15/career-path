@@ -2,6 +2,9 @@ from fastapi import APIRouter, HTTPException
 from pydantic import BaseModel, Field
 from typing import List
 from api.state import app_state
+from pydantic import BaseModel
+from typing import Optional
+from engine.roadmap_generator import generate_roadmap
 
 router = APIRouter()
 
@@ -20,7 +23,18 @@ class CareerRequest(BaseModel):
                 "interests":  ["artificial intelligence", "automation", "statistics"]
             }
         }
+class WeakSkill(BaseModel):
+    skill: str
+    score: float
 
+class MissingSkill(BaseModel):
+    skill: str
+
+class RoadmapRequest(BaseModel):
+    target_occupation: str
+    weak_skills: list[WeakSkill] = []
+    missing_skills: list[MissingSkill] = []
+    strong_skills: list[str] = []
 
 # ── Health Check ──────────────────────────────────────────
 @router.get("/health")
@@ -77,3 +91,17 @@ def reload_fallback():
         }
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))
+        
+@router.post("/careerRoadmap")
+def career_roadmap(request: RoadmapRequest):
+    """Generate a personalized career learning roadmap."""
+    try:
+        roadmap = generate_roadmap(
+            target_occupation=request.target_occupation,
+            weak_skills=[s.dict() for s in request.weak_skills],
+            missing_skills=[s.dict() for s in request.missing_skills],
+            strong_skills=request.strong_skills
+        )
+        return roadmap
+    except Exception as e:
+        return {"error": str(e)}
